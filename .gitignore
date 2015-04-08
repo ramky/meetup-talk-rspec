@@ -1,2 +1,13 @@
 /.bundle
 /vendor/bundle
+
+/my_todos/vendor/bundle
+/my_todos/.bundle
+# Ignore the default SQLite database.
+/my_todos/db/*.sqlite3
+/my_todos/db/*.sqlite3-journal
+
+# Ignore all logfiles and tempfiles.
+/my_todos/log/*
+!/my_todos/log/.keep
+/my_todos/tmp

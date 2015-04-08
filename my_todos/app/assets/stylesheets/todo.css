@@ -1,0 +1,16 @@
+label{
+  width: 200px;
+}
+
+.my_label{
+  display: block;
+}
+
+.error{
+  color: red
+}
+
+.content{
+    float: left;
+    margin-left: 20%;
+}

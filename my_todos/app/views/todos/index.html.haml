@@ -1,0 +1,11 @@
+%p
+  = 'Hello, ' + current_user.name + ' ( ' 
+  = link_to('Sign Out', sign_out_path) 
+  = ' )'
+= my_form_for Todo.new do |f|
+  = f.text_field :name
+  = f.submit "Add Todo"
+%ul
+  - @todos.each do |todo|
+    %li
+      = link_to todo.display_text, todo
