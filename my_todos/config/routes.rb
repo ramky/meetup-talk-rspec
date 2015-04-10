@@ -4,7 +4,7 @@ MyTodos::Application.routes.draw do
   end
 
   scope '/admin' do
-    resources :todos, only: [:index]
+    resources :todos, only: [:index], as: 'admin_todos'
   end
 
   root :to => 'todos#index'
