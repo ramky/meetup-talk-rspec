@@ -3,6 +3,7 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 Dir[File.dirname(__FILE__) + '/../lib/*.rb'].each do |file|
   require File.basename(file, File.extname(file))
 end
+Dir[File.dirname(__FILE__) + '/support/**/*.rb'].each { |f| require f }
 
 require 'rspec'
 
