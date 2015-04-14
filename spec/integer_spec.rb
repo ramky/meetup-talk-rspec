@@ -23,7 +23,7 @@ describe Integer do
       end
 
       it 'should raise an exception for -100' do
-        expect{ 0.factorial }.to raise_exception
+        expect{ -100.factorial }.to raise_exception
       end
     end
   end
