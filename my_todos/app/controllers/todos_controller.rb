@@ -12,7 +12,7 @@ class TodosController < AuthenticatedController
     @todo = Todo.new(todo_params)
 
     if @todo.save_with_tags(current_user)
-      AppMailer.notify_on_new_todo(current_user, @todo).deliver
+      AppMailer.notify_on_new_todo(current_user, @todo).deliver_now
       redirect_to root_path
     else
       render :new
