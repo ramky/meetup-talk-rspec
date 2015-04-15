@@ -6,7 +6,7 @@ describe Signup do
     email        = 'ramky.iyer@gmail.com'
     message      = "Created user #{email} with #{account_name}"
     logger       = FakeLogger.new
-    signup = Signup.new(account_name: account_name, email: email, logger: logger)
+    signup       = Signup.new(account_name: account_name, email: email, logger: logger)
 
     result = signup.save
 
